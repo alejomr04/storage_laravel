@@ -1,0 +1,5 @@
+Vamos a subir imagen a la base de datos
+
+Cuando tengamos los request y en el controlador todo debemos de subirlo al storage 
+
+php artisan storage:link
