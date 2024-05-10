@@ -44,16 +44,16 @@ class InfoController extends Controller
 
         $info->file_url = $fileName;
         $info->save();
-
         return redirect()->route('index');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Info $info)
     {
-        //
+         // Agrega esta línea para depurar el objeto $info
+        return view('show', compact('info'));
     }
 
     /**

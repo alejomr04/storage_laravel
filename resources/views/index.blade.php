@@ -71,6 +71,7 @@
                     <th>Nombre</th>
                     <th>Email</th>
                     <th>Imagen</th>
+                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
@@ -79,6 +80,10 @@
                         <td>{{ $info->name }}</td>
                         <td>{{ $info->email }}</td>
                         <td><img src="{{ asset('storage/images/' . $info->file_url) }}" alt="image"></td>
+                        <td>
+                            <a href="{{route('show',$info->id)}}" class="btn btn-primary">Ver</a>
+                        </td>
+
                     </tr>
                 @empty
                     <tr>

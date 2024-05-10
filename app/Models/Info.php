@@ -9,4 +9,10 @@ class Info extends Model
 {
     use HasFactory;
 
+    protected $fillable =[
+        'name',
+        'email',
+        'file_url',
+    ];
+
 }
